@@ -15,14 +15,15 @@
 <body>
   <script src="script.js"></script>
   <div id="bigflex">
-    <div class="mptop" style="background-color: #1A1A1A;">
+    <div id="mptop" style="background-color: #1A1A1A;">
       <div class="mpbigassfont" style="font-family: 'baskerville_old_faceregular';">
         <span style="font-size: 175px; padding-top:0px;">M</span>odern
       </div>
-      <div style="color: #66666E;" class="mpkindabigassfont">Modern tools for communities of the 21st century.</div>
-      <hr />
+      <div id="descrip">Modern tools for communities of the 21st century.</div>
+      <hr id="div" />
       <div style="font-size: 25px; font-family: &quot;Source Code Pro&quot;, monospace;">
-        <a href="/discord">discord</a>
+        <a onclick="fade('mptop','descrip')" href="/discord" target="_blank">discord</a>
+        &#8226;
         <a href="/reddit">reddit</a>
       </div>
     </div>
