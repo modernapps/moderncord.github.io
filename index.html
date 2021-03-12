@@ -14,6 +14,25 @@
 
 <body>
   <script src="script.js"></script>
+  <div id="overlay-dcord" onclick="off('overlay-dcord'); fade('mptop','descrip')">
+    <div class="fontcontainer">
+      <div class="headingfont" style="font-family: 'baskerville_old_faceregular';">Discord</div>
+      <ul class="list">
+        <li>Warbler &#8226; Bot with a focus on graded incremental punishments over conventional moderation commands
+        </li>
+        <li>Gerbert &#8226; Host events with limited signups and participation rewards</li>
+        <li>Reverb &#8226; Boost enagement with a music bot that ques music based on demand, not on first come first serve</li>
+      </ul>
+    </div>
+  </div>
+  <div id="overlay-rdit" onclick="off('overlay-rdit'); fade('mptop','descrip')">
+    <div class="fontcontainer">
+      <div class="headingfont" style="font-family: 'baskerville_old_faceregular';">Reddit</div>
+      <ul class="list">
+        <li>Lockbot &#8226; Allow OP to lock their thread just by tagging lockbot</li>
+      </ul>
+    </div>
+  </div>
   <div id="bigflex">
     <div id="mptop" style="background-color: #1A1A1A;">
       <div class="mpbigassfont" style="font-family: 'baskerville_old_faceregular';">
@@ -22,9 +41,9 @@
       <div id="descrip">Modern tools for communities of the 21st century.</div>
       <hr id="div" />
       <div style="font-size: 25px; font-family: &quot;Source Code Pro&quot;, monospace;">
-        <a onclick="fade('mptop','descrip')" href="/discord" target="_blank">discord</a>
+        <a onclick="fade('mptop','descrip'); on('overlay-dcord')" href="#">discord</a>
         &#8226;
-        <a href="/reddit">reddit</a>
+        <a onclick="fade('mptop','descrip'); on('overlay-rdit')" href="#">reddit</a>
       </div>
     </div>
   </div>
